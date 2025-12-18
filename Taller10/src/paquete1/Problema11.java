@@ -1,14 +1,15 @@
 /*
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package paquete1;
 
 /**
  *
- * @author reroes
+ * @author UTPL
  */
-public class Problema01 {
+public class Problema11 {
+   
 
     public static void main(String[] args) {
 
@@ -20,26 +21,32 @@ public class Problema01 {
         };
 
         String[] estudiantes = {"Ana", "Luis", "Carlos", "María"};
-        int[] numAsistencia = new int [4]
-        int asistenciaTotal;
+        int[] numAsistencia = new int [4];
+        int asistenciaTotal=0;
         String completa;
-        String reporte;
+        String reporte = "";
 
         for (int i = 0; i < asistencia.length; i++) {
-            if (asistencia[i]==True){
-                asistencia = asistencia +1;
+            asistenciaTotal = 0;
+            for (int c = 0 ; c < asistencia[i].length;c++){
+            if (asistencia[i][c]){
+                asistenciaTotal = asistenciaTotal +1;
             }
-            asistencia[i] = asistencia;
+            numAsistencia[i] = asistenciaTotal;
         }
+        }
+        
+        
         for (int i = 0; i < asistencia.length; i++){
             if (numAsistencia[i]==5){
-                completa = "COMPLETA"
+                completa = "COMPLETA";
                 
             }else{
-                completa = " INCOMPLETA"
+                completa = " INCOMPLETA";
             }
-            reporte = String.format ("El estudiante %s asistió %d días, "
+            reporte = String.format ("%sEl estudiante %s asistió %d días, "
                     + "su asistencia es: %s\n",
+                    reporte,
                     estudiantes[i],
                     numAsistencia[i],
                     completa);
@@ -49,3 +56,4 @@ public class Problema01 {
     }
 
 }
+
