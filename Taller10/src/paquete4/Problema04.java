@@ -69,8 +69,8 @@ public class Problema04 {
             reporteB=String.format("%s\n",reporteB);
         }
 
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 2; j++) {
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < a[i].length; j++) {
 
 
                 if (a[i][j] < b[i][j]) {
